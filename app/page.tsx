@@ -175,11 +175,10 @@ export default function Home() {
   return (
     <main>
       <header className="siteHeader">
-        <a className="brand" href="#top" aria-label="BNI長鑽分會首頁">
-          <span className="brandMark">鑽</span>
+        <a className="brand" href="#top" aria-label="長鑽分會首頁">
+          <span className="brandMark" aria-hidden="true" />
           <span>
-            <strong>BNI長鑽分會</strong>
-            <small>Online Business Chapter</small>
+            <strong>長鑽分會</strong>
           </span>
         </a>
         <nav aria-label="主要導覽">

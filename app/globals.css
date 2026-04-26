@@ -91,6 +91,7 @@ details::before,
 }
 
 .brandMark {
+  position: relative;
   display: grid;
   width: 42px;
   height: 42px;
@@ -103,6 +104,17 @@ details::before,
   color: #ffffff;
   font-weight: 800;
   box-shadow: 0 12px 30px rgba(200, 50, 50, 0.48), inset 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.brandMark::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.22) 38%, transparent 40%),
+    linear-gradient(45deg, #ffffff, #d9f1ff 42%, #88c9f6 58%, #ffffff);
+  clip-path: polygon(50% 0%, 92% 30%, 72% 100%, 28% 100%, 8% 30%);
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.72));
 }
 
 .brand strong,
@@ -225,7 +237,7 @@ p {
 h1 {
   max-width: 1120px;
   margin-bottom: 24px;
-  font-size: clamp(38px, 6.2vw, 88px);
+  font-size: clamp(32px, 5.2vw, 76px);
   line-height: 1.08;
 }
 
@@ -240,7 +252,7 @@ h1 span {
   background: linear-gradient(180deg, #e9f7ff 0%, #a9dcff 42%, #55a5e5 100%);
   background-clip: text;
   color: transparent;
-  font-size: clamp(44px, 6.6vw, 94px);
+  font-size: clamp(38px, 5.6vw, 82px);
   font-weight: 900;
   line-height: 0.98;
   text-shadow:
@@ -257,7 +269,7 @@ h1 span {
   background: linear-gradient(180deg, #ffffff 0%, #d8f0ff 48%, #7fc0ed 100%);
   background-clip: text;
   color: transparent;
-  font-size: clamp(32px, 5vw, 70px);
+  font-size: clamp(26px, 4.1vw, 56px);
   font-weight: 900;
   letter-spacing: 0;
   text-shadow:
@@ -280,7 +292,7 @@ h3 {
   max-width: 780px;
   margin-bottom: 18px;
   color: rgba(240, 246, 255, 0.88);
-  font-size: clamp(18px, 2.05vw, 28px);
+  font-size: clamp(16px, 1.72vw, 24px);
   line-height: 1.55;
   text-shadow: 0 0 26px rgba(68, 149, 218, 0.28);
 }
@@ -288,7 +300,7 @@ h3 {
 .heroTagline {
   margin-bottom: 34px;
   color: #6abbf5;
-  font-size: clamp(18px, 2vw, 28px);
+  font-size: clamp(17px, 1.7vw, 24px);
   font-weight: 900;
   text-shadow: 0 0 26px rgba(91, 180, 246, 0.42);
 }
