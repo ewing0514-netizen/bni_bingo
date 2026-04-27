@@ -177,6 +177,10 @@ nav a:hover,
   padding: 132px clamp(22px, 6vw, 76px) 150px;
   overflow: hidden;
   color: #ffffff;
+  background:
+    radial-gradient(circle at 50% 36%, rgba(45, 91, 146, 0.2), transparent 28%),
+    radial-gradient(circle at 92% 18%, rgba(58, 104, 171, 0.16), transparent 24%),
+    linear-gradient(180deg, #020407 0%, #030508 42%, #010203 100%);
   --diamond-scroll: 0px;
   --diamond-glow: 0.18;
 }

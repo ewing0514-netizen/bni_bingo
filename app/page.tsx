@@ -211,9 +211,9 @@ export default function Home() {
             <span className="heroSlogan">加入長鑽，業績不斷</span>
           </h1>
           <p className="heroLead">
-            100% 支援線上與會・不受地點限制
+            實體分會，每週透過「信任感」建立強不可摧的商業合作
             <br />
-            我們一起，打造你的夢幻 Team
+            我們一起建立合作團隊
           </p>
           <p className="heroTagline">Stand by we! We are one team.</p>
           <div className="heroActions">
